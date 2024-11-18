@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="background_subtraction" exec="background_subtraction" name="background_subtraction" output="screen">
+    <param name="input_topic" value="/sensor_set3_ns/pointcloud_raw"/>
+    <param name="output_topic" value="/background_subtracted_pcd"/>
+    <!-- <param name="threshold" value="50.0"/> -->
+  </node>
+</launch>
